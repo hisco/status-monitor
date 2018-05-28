@@ -122,34 +122,3 @@ module.exports = {
     HttpRequest,
     HttpHeadersOriginalCase
 }
-const httpStatus = new StatusMonitor({
-    timeout : 3000,
-    interval : 3000,
-    retryPauseTime : 1,
-    healthyAfter:3,
-    unhealthyAfter:2,
-    retries : 0,
-    requestOptions : {
-        url : "http://example.com/",
-        headers : {
-            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-            'Accept-Encoding': 'gzip, deflate',
-            'Accept-Language': 'en-US,en;q=0.9',
-            'Cache-Control': 'max-age=0',
-            'DNT': 1,
-            'Host': 'example.com',
-            'Upgrade-Insecure-Requests': 1,
-            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36'
-        }
-    }
-});
-httpStatus.start(()=>{
-    console.log("started")
-});
-httpStatus.on('testResult' , (r)=>{
-    console.log("testResult",  httpStatus.status)
-})
-httpStatus.on('statusChange' , (r)=>{
-    httpStatus.status;
-    console.log("statusChange",r)
-})
