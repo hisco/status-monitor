@@ -1,0 +1,43 @@
+{
+  "name": "status-monitor",
+  "version": "1.0.01",
+  "description": "Monitor http endpoints health instantly, perfect for server integration",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "scripts": {
+    "test": "mocha --recursive --reporter spec",
+    "watch-test": "mocha --recursive --watch --reporter spec",
+    "test-ci": "istanbul cover ./node_modules/mocha/bin/_mocha test/**/*.js --report lcovonly -- -R spec && cat ./coverage/lcov.info"
+  },
+  "devDependencies": {
+    "mocha": "^5.1.1",
+    "chai": "^4.1.2",
+    "chai-spies": "^1.0.0",
+    "istanbul": "0.4.5",
+    "unit-test-class": "1.0.5"
+  },
+  "keywords": [
+    "health",
+    "healthcheck",
+    "status",
+    "statuscheck",
+    "monitor",
+    "status monitor",
+    "http status",
+    "http check",
+    "tcp check"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hisco/status-monitor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hisco/status-monitor/issues"
+  },
+  "homepage": "https://github.com/hisco",
+  "author": "Eyald <hisco@googlegroups.com‬>",
+  "license": "MIT",
+  "dependencies": {
+    "healthcheck-monitor": "^1.0.1"
+  }
+}
