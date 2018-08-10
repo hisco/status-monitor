@@ -58,3 +58,4 @@ declare module StatusMonitor{
     }
 
 }
+export = StatusMonitor;

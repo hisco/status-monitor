@@ -21,7 +21,7 @@ Monitor status of HTTP backends.
 If you have any requests/issues please open an issue at Github.
 This is the most basic usage
 ```js
-    const {StatusMonitor , STATUS} = require('status-monitor');
+const {StatusMonitor , STATUS} = require('status-monitor');
 const statusMonitor = new StatusMonitor({
             interval : 5000,
             timeout :   1500, 

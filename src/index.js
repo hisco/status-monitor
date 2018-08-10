@@ -18,16 +18,9 @@ class StatusMonitor extends EventEmitter{
         return STATUS;
     }
     getTestOptions(options , httpMonitorAction){
-        return {
-            interval : options.interval,
-            timeout : options.timeout ,
-            startPeriod : options.startPeriod,
-            retries : options.retries,
+        return Object.assign({
             action : httpMonitorAction,
-            retryPauseTime :  options.retryPauseTime,
-            healthyAfter : options.healthyAfter,
-            unhealthyAfter : options.unhealthyAfter    
-        }
+        }, options);
     }
     getHTTPMonitorOptions(options){
         let httpRequestAction;

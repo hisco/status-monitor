@@ -1,6 +1,6 @@
 {
   "name": "status-monitor",
-  "version": "1.0.01",
+  "version": "1.0.3",
   "description": "Monitor http endpoints health instantly, perfect for server integration",
   "main": "src/index.js",
   "types": "src/index.d.ts",
@@ -38,6 +38,6 @@
   "author": "Eyald <hisco@googlegroups.com‬>",
   "license": "MIT",
   "dependencies": {
-    "healthcheck-monitor": "^1.0.1"
+    "healthcheck-monitor": "^1.0.2"
   }
 }
