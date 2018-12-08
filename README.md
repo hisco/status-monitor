@@ -1,5 +1,7 @@
 # Status monitor
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/hisco/status-monitor.svg)](https://greenkeeper.io/)
+
 [![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
 
