@@ -1,6 +1,6 @@
 {
   "name": "status-monitor",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Monitor http endpoints health instantly, perfect for server integration",
   "main": "src/index.js",
   "types": "src/index.d.ts",
